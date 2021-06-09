@@ -1,5 +1,7 @@
 
 var random = [];
+var numMax = 100;
+
 
 function generaRandom(){
 
@@ -17,15 +19,17 @@ function generaRandom(){
 
 function numeroUtente(){
     var numeroUtente = parseInt(prompt('Inserisci un numero compreso tra 1 e 100'));
-
-    for (var i = 0; i < 100; i++){
+    var punteggio = 0;
+    for (var i = 0; i < numMax - random.length; i++){
         if(random.includes(numeroUtente)){
         document.getElementById('perso').innerHTML = 'Hai perso';
         
         } else {
             var numeroUtente = parseInt(prompt('Inserisci un numero compreso tra 1 e 100'));
-        }
-    }
+            var punteggio = punteggio + 1;
+            console.log(punteggio);
+        } 
+    } document.getElementById('risultato').innerHTML = ('Hai totalizzato' + ' ' + punteggio + ' ' + 'punti');
 }
 
 generaRandom();

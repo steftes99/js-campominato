@@ -1,0 +1,25 @@
+body{
+    background-color: #445020;
+}
+h1{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bomb{
+    display: flex;
+    justify-content: flex-start;
+}
+.bomb > img{
+    width: 20%;
+    
+}
+#perso, #risultato {
+    font-size: 30px;
+    font-weight: bold;
+}
